@@ -1,6 +1,6 @@
 #include "main.h"
-/**
-* _memset - sets a given amount of bytes to a value at an address
+
+/** given amount of bytes to a value at an address
 *
 * @s: memory location to start at
 * @b: character to write to memory
@@ -8,11 +8,17 @@
 *
 * Return: pointer to s
 */
- char *_memset(char *s, char b, unsigned int n)
+
+void *_memset(void *s, int c, size_t n)
 
 {
-	char *ptr = s;
+	unsigned int index;
+	unsigned char *memory = s, value = c;
 
-	while (n-- > 0)
-	
-	*ptr++ = b;
+	for (index = 0; index < n; index++)
+
+	memory[index] = value;
+
+	return (memory);
+
+}

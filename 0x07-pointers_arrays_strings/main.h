@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
 * File: main.h
@@ -7,6 +7,7 @@
 * Desc: Header file containing prototypes for all functions
 *used in 0x07. C - Even more pointers, arrays and strings
 */
+
 #include <stddef.h>
 
 int _putchar(char c);
