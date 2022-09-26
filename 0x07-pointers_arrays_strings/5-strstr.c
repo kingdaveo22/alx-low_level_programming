@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 
 		pneedle = needle;
 
-		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pn			eedle)
+		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pn				eedle)
 
 	{
 
@@ -31,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 
 		pneedle++;
 
-		}
+	}
 
 		if (!*pneedle)
 
