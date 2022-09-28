@@ -10,6 +10,7 @@ int is_palindrome(char *s)
 
 {
 	int a;
+
 	a = rev(s);
 
 	if (a <= 1)
@@ -32,7 +33,7 @@ int rev(char *s)
 
 	if (*s == '\0')
 
-	{
+{
 
 	return (0);
 
