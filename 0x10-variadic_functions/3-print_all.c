@@ -1,12 +1,9 @@
 #include "variadic_functions.h"
-
 /**
 * print_all - prints all
 * @format: param
 */
-
 void print_all(const char * const format, ...)
-
 {
 	va_list valist;
 	unsigned int i = 0, j, k = 0;
@@ -40,7 +37,6 @@ void print_all(const char * const format, ...)
 			break;
 			case 's':
 			str = va_arg(valist, char *), k = 1;
-
 			if (!str)
 			{
 				printf("(nil)");
