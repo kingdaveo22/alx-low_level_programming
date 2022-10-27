@@ -2,33 +2,31 @@
 
 /**
 * print_listint - prints all the elements of a linked list
-* @h: linked list of type listint_t to print
+* @h: head of the list
 *
-* Return: number of nodes
+* Return: the number of nodes
 */
 
 size_t print_listint(const listint_t *h)
 
 {
 
-    size_t num = 0;
+	const listint_t *cursor = h;
 
+	size_t count = 0;
 
+	while (cursor != NULL)
 
-    while (h)
+	{
 
-    {
+		printf("%d\n", cursor->n);
 
-        printf("%d\n", h->n);
+		count += 1;
 
-        num++;
+		cursor = cursor->next;
 
-        h = h->next;
+	}
 
-    }
-
-
-
-    return (num);
+	return (count);
 
 }
