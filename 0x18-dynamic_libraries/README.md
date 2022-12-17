@@ -1,1 +1,1 @@
-Dynamic libraries in C programming language
+0x18. C - Dynamic libraries
